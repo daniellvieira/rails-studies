@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_18_231601) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_19_134158) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.string "street"
+    t.string "city"
+    t.integer "zipcode"
+    t.bigint "client_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["client_id"], name: "index_addresses_on_client_id"
+  end
 
   create_table "ahoy_events", force: :cascade do |t|
     t.bigint "visit_id"
@@ -56,6 +66,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_231601) do
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
   end
 
+  create_table "clients", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -64,4 +81,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_18_231601) do
     t.integer "views"
   end
 
+  add_foreign_key "addresses", "clients"
 end
