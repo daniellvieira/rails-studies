@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-
   after_action :track_action
 
   protected

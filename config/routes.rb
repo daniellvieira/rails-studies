@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root "posts#index"
-
   resources :posts
   resources :clients
+
+  post 'search', to: 'search#index'
+
+  root "posts#index"
 end
