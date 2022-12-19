@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy send_alert ]
 
   # GET /posts or /posts.json
   def index
@@ -27,6 +27,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        Blog::BotMessageSender.call(@post, url_for(@post))
         format.html { redirect_to post_url(@post), notice: "Post was successfully created." }
         format.json { render :show, status: :created, location: @post }
       else
@@ -57,6 +58,13 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  # GET /posts/:id/send_alert
+  def send_alert
+    Blog::BotMessageSender.call(@post, url_for(@post))
+
+    redirect_to post_url(@post), notice: "The post has been successfully sent an alert."
   end
 
   private

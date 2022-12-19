@@ -64,6 +64,8 @@ gem 'groupdate'
 gem 'searchkick'
 # https://github.com/elastic/elasticsearch-ruby
 gem 'elasticsearch', '~> 7.17.7'
+# https://github.com/shardlab/discordrb
+gem 'discordrb'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
