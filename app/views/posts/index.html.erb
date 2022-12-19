@@ -2,6 +2,9 @@
 
 <h1>Posts</h1>
 
+<%= turbo_stream_from 'ahoy_events' %>
+<%= render 'monitoring/chart', events: @events  %>
+<hr>
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
