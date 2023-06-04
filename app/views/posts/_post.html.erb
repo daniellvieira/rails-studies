@@ -9,4 +9,7 @@
     <%= post.body %>
   </p>
 
+  <p>
+    <%= image_tag(post.image, class: 'image') if post.image.attached? %>
+  </p>
 </div>

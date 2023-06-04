@@ -21,6 +21,9 @@
     <%= form.text_area :body %>
   </div>
 
+  <%= render 'image_preview', form: form, post: post %>
+
+  <hr />
   <div>
     <%= form.submit %>
   </div>
