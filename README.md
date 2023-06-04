@@ -30,10 +30,19 @@ docker run -p 127.0.0.1:9200:9200 -p 127.0.0.1:9300:9300 -e "discovery.type=sing
 ### Image Previews with Active Storage
 
 <pre><code>
-# start database
-pg_ctl start
-
 rails active_storage:install
 
 rails g stimulus previews
+</code></pre>
+
+### Encrypt Active Record
+
+[Active Record Encryption](https://guides.rubyonrails.org/active_record_encryption.html)
+
+<pre><code>
+rails g action_text:install
+
+rails db:encryption:init
+
+EDITOR="vim" bin/rails credentials:edit
 </code></pre>

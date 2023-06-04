@@ -91,6 +91,7 @@
     <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.12.0, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ice_nine (v0.11.2, asdf: 3.0.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="image_processing (v1.12.2, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v1.1.5, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.5.11, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.6.0, asdf: 3.0.3) [gem]" level="application" />
@@ -103,6 +104,7 @@
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.4.1, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2022.0105, asdf: 3.0.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.12.0, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.2, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.16.3, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.6.0, asdf: 3.0.3) [gem]" level="application" />
@@ -133,6 +135,7 @@
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.3.1, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rest-client (v2.1.0, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, asdf: 3.0.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.1.4, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, asdf: 3.0.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="safely_block (v0.3.0, asdf: 3.0.3) [gem]" level="application" />

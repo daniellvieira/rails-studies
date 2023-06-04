@@ -67,4 +67,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # To ease migrations of unencrypted data, the library includes the option
+  config.active_record.encryption.support_unencrypted_data = true
 end

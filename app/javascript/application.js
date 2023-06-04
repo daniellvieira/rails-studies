@@ -5,3 +5,5 @@ import "controllers"
 import 'chartkick'
 import 'Chart.bundle'
 import 'ahoy'
+import "trix"
+import "@rails/actiontext"

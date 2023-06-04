@@ -9,3 +9,5 @@ pin "chartkick", to: "https://ga.jspm.io/npm:chartkick@4.2.0/dist/chartkick.js"
 pin 'Chart.bundle', to: 'Chart.bundle.js'
 pin "ahoy", to: "https://ga.jspm.io/npm:ahoy@1.0.1/lib/index.js"
 pin "os", to: "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.27/nodelibs/browser/os.js"
+pin "trix"
+pin "@rails/actiontext", to: "actiontext.js"
