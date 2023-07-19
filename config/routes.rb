@@ -9,5 +9,9 @@ Rails.application.routes.draw do
 
   post 'search', to: 'search#index'
 
+  # Webhooks
+  resources :webhooks, only: %i(create index show destroy)
+  post 'webhooks/:source', to: 'webhooks#create'
+
   root "posts#index"
 end

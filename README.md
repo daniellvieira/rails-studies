@@ -46,3 +46,18 @@ rails db:encryption:init
 
 EDITOR="vim" bin/rails credentials:edit
 </code></pre>
+
+### Webhooks
+
+[Stripe Webhook Docs](https://stripe.com/docs/webhooks)
+
+<pre><code>
+rails g scaffold webhook source data:jsonb message event
+
+rails g job webhook
+
+</code></pre>
+
+Requesição de teste:
+
+<code>curl -X POST -d "message=Ping&event=pull_request" http://localhost:3000/webhooks/github</code>
