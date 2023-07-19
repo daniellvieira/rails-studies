@@ -47,7 +47,7 @@ rails db:encryption:init
 EDITOR="vim" bin/rails credentials:edit
 </code></pre>
 
-### Webhooks
+### Webhooks Client
 
 [Stripe Webhook Docs](https://stripe.com/docs/webhooks)
 
@@ -56,8 +56,15 @@ rails g scaffold webhook source data:jsonb message event
 
 rails g job webhook
 
+# Requisição de teste
+curl -X POST -d "message=Ping&event=pull_request" http://localhost:3000/webhooks/github
 </code></pre>
 
-Requesição de teste:
+### Asset Ram Gem for Performance
 
-<code>curl -X POST -d "message=Ping&event=pull_request" http://localhost:3000/webhooks/github</code>
+<pre><code>
+rails g controller pages home
+
+</code></pre>
+[To download photos](https://unsplash.com/pt-br/s/fotografias/planet)
+

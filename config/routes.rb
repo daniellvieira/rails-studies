@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/home'
   resources :users
   resources :posts do
     member do
@@ -13,5 +14,5 @@ Rails.application.routes.draw do
   resources :webhooks, only: %i(create index show destroy)
   post 'webhooks/:source', to: 'webhooks#create'
 
-  root "posts#index"
+  root "pages#home"
 end
